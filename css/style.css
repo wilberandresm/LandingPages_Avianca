@@ -21,6 +21,7 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
     font-family: 'Open Sans', sans-serif;
+    
 }
 
 ol, ul {
@@ -66,19 +67,21 @@ table {
 
 header{
     overflow: hidden;
-    padding: 15px;
+    padding-left:  15px;
     display: flex;
     flex-flow: row;
     text-transform: uppercase;
     justify-content: space-between;
-    height:40px;
+    height:100%;
     width: 100%;
+    align-items: center;
 
 }
 
 #logo{
     width: 170px;
     height: 40px;
+    padding-left: 15px;
 
 }
 #logo img{
@@ -91,9 +94,57 @@ header{
 .portada{
     background: url(../img/banner_home__RED_SALE_CO.jpg);
     background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 100% 100%;
-    background-attachment: fixed;
+    background-position: center ;
+  /*  background-size: 100% 100%;
+    background-attachment: fixed;*/
     overflow: hidden;
-   
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+
+.portada::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    z-index: -1;
+}
+
+.contenedor-portada{
+    width: 100%;
+}
+
+.informacion{
+    float:right;
+    color: #fff;
+    width: 40%;
+    line-height: normal;
+    padding: 10px 0px;
+    text-align: left;
+    padding-right: 15px;
+    text-shadow: 0 0 1px black;
+
+}
+
+#viaja{
+    font-size: 2.25rem;
+    line-height: 40px;
+    width: 100%;
+    padding-right: 0px;
+    font-weight: bold;
+}
+#ida{
+    width: 100%;
+    padding-right: 0px;
+    font-size: 1.25rem;
+    line-height: 1;
+    font-weight: 600;
 }
