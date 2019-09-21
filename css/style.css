@@ -1,0 +1,99 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+	margin: 0;
+	border: 0;
+  padding: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-----End Reset Css-----*/
+
+.contenedor{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 390px;
+
+}
+
+.encabezado{
+    height: 72px;
+    background-color: #de0108;
+    padding: 0;
+    z-index: 9999;
+    transition: all .3s;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    width: 100%;
+}
+
+header{
+    overflow: hidden;
+    padding: 15px;
+    display: flex;
+    flex-flow: row;
+    text-transform: uppercase;
+    justify-content: space-between;
+    height:40px;
+    width: 100%;
+
+}
+
+#logo{
+    width: 170px;
+    height: 40px;
+
+}
+#logo img{
+
+    max-width: 100%;
+   /**  height: auto;
+   float: left;**/
+}
+
+.portada{
+    background: url(../img/banner_home__RED_SALE_CO.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    overflow: hidden;
+   
+}
