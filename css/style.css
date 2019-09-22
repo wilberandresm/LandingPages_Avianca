@@ -195,6 +195,8 @@ form{
     height: auto;
     border-radius: 5px 5px 5px 5px;
     margin-left: 15px;
+    flex-wrap: wrap;
+    display: flex;
 
 }
 
@@ -207,6 +209,7 @@ fieldset{
     margin-bottom: 0px;
     margin-left: 10px;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 legend{
@@ -259,6 +262,7 @@ input:focus, input.form-control:focus {
     padding-left: 10px;
     border-radius: 0 0 5px 5px;
     display: flex;
+    width: 100%;
 }
 .fechas{
     margin-top: 10px;
@@ -332,6 +336,8 @@ aside{
     box-shadow: 0 0 10px #969696;
     color: #323237;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 .imagen-aside img{
     width: 100%;
@@ -386,6 +392,7 @@ aside{
     line-height: 16px;
     text-decoration: none;
     vertical-align: middle;
+    margin: 0 auto;
 }
 
 .tarjetas{
@@ -457,4 +464,110 @@ aside{
 .precio{
     font-size: 1.3rem;
     font-weight: bold;
+}
+.footer-avianca{
+    display: flex;
+    position: relative;
+    top: -111px;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 33px;
+    padding-bottom: 24px;
+}
+
+.contenedor-footer-avianca{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#logo-izquierda{
+    display: flex;
+  
+}
+.img-logo{
+    height: 20px;
+}
+
+.img-logo #logo-star {
+    width: 177px;
+    height: 17px;
+}
+.footer-derechos{
+    position: relative;
+    top:-111px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: #f3f2f2;
+}
+
+.contenedor-footer{
+    margin: 0px auto;
+}
+
+.derechos p{
+    font-size: .75rem;
+    color: #323237;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+.contactanos{
+    position: relative;
+    top: -111px;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.texto-contactanos{
+    display: flex;
+    color: #323237;
+    font-size: larger;
+}
+.texto-contactanos p{
+    justify-content: center;
+    vertical-align: middle;
+}
+
+
+.icono{
+    width: 22px;
+    height: 32px;
+}
+.redes-sociales{
+    flex-wrap: wrap;
+    display: flex;
+}
+.redes-sociales a{
+    text-decoration: none;
+    background: #505055;
+    width: 32px;
+    height: 32px;
+    display: block;
+    border-radius: 50%;
+    float: left;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+.raya{
+    height: 2px;
+    width: 100%;
+    background: #505055;
+    position: relative;
+    top:-111px;
+    margin-left: 20px;
+    margin-right: 20px;
+   
 }
